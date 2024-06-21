@@ -1,0 +1,4 @@
+## Footprinting Tools
+1. Harvesting - 
+  theHarvester -d kali.org -l 500 -b duckduckgo
+  
