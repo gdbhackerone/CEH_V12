@@ -1,0 +1,14 @@
+# Tool Documentation:
+
+NMAP
+nmap -v -A -sV $IP
+nping --tcp -p 22 --flags syn --ttl 2 $IP
+
+Compare yesterday’s port scan (yesterday.xml) with the scan from today (today.xml):
+ndiff yesterday.xml today.xml
+
+ncat -v --exec "/bin/bash" --allow $IP -l 4444 --keep-open
+ndiff -h
+nping -h
+sudo apt install nmap-common
+
